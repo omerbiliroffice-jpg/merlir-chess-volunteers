@@ -1,0 +1,51 @@
+name: Volunteer interest
+description: Tell us which areas of MERLIR CHESS interest you (interest list only)
+title: "[Interest] "
+labels: ["volunteer-interest"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue will be PUBLIC.** Anyone can see your GitHub username and what you write, and third parties may copy it.
+        Please read [PRIVACY.md](https://github.com/omerbiliroffice-jpg/merlir-chess-volunteers/blob/main/PRIVACY.md) first. Data controller: Ömer Bilir — omerbilir.office@gmail.com.
+        Do not include your real name, email, phone, address or any sensitive information.
+
+        This is an **interest list only**. It is not a job application, not a contract, and not agreement to any contributor terms.
+        Submitting it does not grant code access and no payment is offered. If an area fits, we may reply here to describe an optional, unpaid contribution opportunity;
+        code access is only given individually after separate written terms are signed. Nobody has any obligation as a result of this issue.
+  - type: dropdown
+    id: areas
+    attributes:
+      label: Areas of interest
+      multiple: true
+      options:
+        - Swift / SwiftUI
+        - AVFoundation / AVPlayer
+        - iOS video playback optimization
+        - HEVC video / alpha compositing
+        - SpriteKit / SceneKit / RealityKit
+        - Chess engine architecture
+        - Chess AI / bot development
+        - Event-driven animation systems
+        - iPhone / iPad / Mac UI development
+        - Apple platform testing
+        - Performance and memory optimization
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: note
+    attributes:
+      label: Public links or a short note (optional)
+      description: For example, links to public projects. Keep it short and do not include personal contact details.
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: I am 18 or older.
+          required: true
+        - label: I understand this is a public, unpaid interest list only, with no obligations for either side.
+          required: true
